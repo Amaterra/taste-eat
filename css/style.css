@@ -1,0 +1,478 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   margin: 0 auto;
+}
+
+.body {
+   font-size: 16px;
+}
+
+/*header*/
+
+.header {
+   display: block;
+   width: 100%;
+   max-height: 370px;
+   background-color: #292E36;
+}
+
+.head {
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+   padding: 50px 40px;
+}
+
+.head__button {
+   font-family: 'Josefin Sans', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   text-align: center;
+   cursor: pointer;
+}
+
+.head__button-call {
+   border: #E1B168 solid 2px;
+   background-color: #292E36;
+   font-size: 22px;
+   padding: 1em 3em 1em 3em;
+}
+
+.head__number-phone {
+   align-items: normal;
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+.head__reservation {
+   font-size: 22px;
+   padding: 1em 4em 1em 4em;
+}
+
+.head__button-reservation {
+   background-color: #E1B168;
+   color: #292E36;
+   border: #E1B168 solid 3.5px;
+}
+
+.head__header-menu::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 100%;
+   height: 1px;
+   background-color: #5C6168;
+}
+
+/* navigation */
+
+.head__nav_logo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.head__main-logo {
+   height: auto;
+   width: 100%;
+   max-width: 378px;
+   min-width: 10px;
+}
+
+.navigation {
+   width: 836px;
+   height: 82px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.nav__link {
+   text-decoration: none;
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.nav__link:hover {
+   color: #E1B168;
+}
+
+.head__logo_social {
+   width: 219px;
+   height: 82px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.fa-brands {
+   color: #FFFFFF;
+   font-size: 20px;
+}
+
+/* sec one */
+
+.section-one {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 10px 0 40px;
+   background-color: #292E36;
+   gap: 60px;
+
+}
+
+.section-one__title {
+   display: block;
+   position: relative;
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 100px;
+   line-height: 110px;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.section-one__main-title {
+   margin: 15.3% 0 1.8% 0;
+}
+
+.section-one__text {
+   display: block;
+   position: relative;
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.section-one__img {
+   display: block;
+   position: relative;
+   height: auto;
+   max-width: 595px;
+   width: 100%;
+}
+
+.section-one__button {
+   background-color: #292E36;
+   border: #E1B168 solid 1px;
+   cursor: pointer;
+   margin-top: 2.4vw;
+}
+
+.section-one__button-name {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.3em;
+   line-height: 33px;
+   text-align: center;
+   color: #E1B168;
+   padding: 0.7em 2em 0.7em 2em;
+}
+
+/* sec two */
+
+.section-two {
+   background-color: #FFF8F5;
+   padding: 7vw 2.7vw 0 2.4vw;
+
+}
+
+.section-two__about-sec {
+   display: grid;
+   grid-template-columns: 30% 50% 20%;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   gap: 10px;
+   max-height: 243px;
+}
+
+.section-two__circle {
+   width: 83px;
+   height: 83px;
+   background-color: #292E36;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.locate_us,
+.open_hours,
+.reservation {
+   display: flex;
+}
+
+.fa-solid.fa-location-dot,
+.fa-regular.fa-clock,
+.fa-regular.fa-clipboard {
+   color: #FFF8F5;
+   font-size: 40px;
+}
+
+.section-two__name {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 39px;
+   letter-spacing: 0.2px;
+   color: #292E36;
+}
+
+.section-two__about {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #555555;
+}
+
+/* sec three The Delicious Story*/
+
+.section-three {
+   display: grid;
+   grid-template-columns: 60% 40%;
+   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+   gap: 45px;
+
+   background-color: #FFF8F5;
+   padding: 84px 53px 125px 40px;
+
+}
+
+.section-three__img {
+   height: auto;
+   width: 100%;
+   max-width: 743px;
+}
+
+.section-three__title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 56px;
+   letter-spacing: 0.2px;
+   color: #292E36;
+}
+
+.section-three__year-dscrptn {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   gap: 50px;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-three__text,
+.section-three__discription,
+.josefine {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #555555;
+}
+
+.section-three__year {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 56px;
+   letter-spacing: 0.2px;
+   color: #292E36;
+}
+
+.josefine {
+   text-transform: uppercase;
+   margin: 20px 0;
+}
+
+.josefine_sign {
+   height: auto;
+   width: 100%;
+   max-width: 199px;
+}
+
+/* sec four Menu */
+
+.section-four {
+   display: grid;
+   grid-template-columns: 35% 65%;
+   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+   gap: 55px;
+   padding: 10vw 2.8% 14vw 2.8%;
+   background-color: #E5E5E5;
+
+}
+
+.section-four__main-title {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   text-transform: uppercase;
+   color: #292E36;
+}
+
+.section-dishes__title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   text-transform: capitalize;
+   color: #292E36;
+   padding: 12px 0 13px 0;
+}
+
+.section-four__main-title::after {
+   content: "";
+   display: block;
+   position: relative;
+   width: 48px;
+   height: 1px;
+   background-color: #E1B168;
+
+}
+
+.section-four__main-title::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 48px;
+   height: 1px;
+   background-color: #E1B168;
+   bottom: 3px;
+}
+
+.section-dishes__text {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   color: #555555;
+}
+
+.section-dishes__img {
+   height: auto;
+   width: 100%;
+   max-width: 398px;
+   margin: 3.1vw 0 4.2vw 0;
+}
+
+.section-dishes__button {
+   border: #E1B168 solid 2px;
+   background-color: #E5E5E5;
+   cursor: pointer;
+}
+
+.section-dishes__button-name {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   text-align: center;
+   color: #E1B168;
+
+   padding: 1.25em 3.5em;
+}
+
+.section-list__dishes-title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   color: #292E36;
+   margin-bottom: 2.8vw;
+}
+
+.list-item-dishes {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 800px;
+   background-color: #E1B168;
+   margin-bottom: 3.4vw;
+
+
+
+}
+
+.list-item-decor::before {
+   content: "";
+   display: block;
+   position: relative;
+
+   width: 200px;
+   width: 100%;
+   min-width: 100px;
+   height: 1px;
+   background-color: #292E36;
+
+}
+
+.list-item-img {
+   width: 84px;
+   height: 84px;
+   margin-right: 20px;
+}
+
+.section-list__dishes-title.dessert,
+.section-list__dishes-title.main-dish {
+   margin-top: 6vw;
+}
+
+
+
+.list-item-title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   color: #292E36;
+}
+
+.list-item-about {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   color: #555555;
+}
+
+.list-item-cost {
+   position: relative;
+   display: block;
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   color: #292E36;
+
+
+}

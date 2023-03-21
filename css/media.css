@@ -1,0 +1,297 @@
+/*------------------ MEDIA 1440px ------------------*/
+
+@media screen and (max-width: 1440px) {
+
+   /* header */
+
+   .head__button-call {
+      font-size: calc(10px + (22 - 10)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .head__reservation {
+      font-size: calc(10px + (22 - 10)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   /* navigation */
+
+   .nav__link {
+      font-size: calc(10px + (22 - 10)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   /* sec one */
+
+   .section-one__title {
+      font-size: calc(30px + (100 - 30)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(35px + (110 - 35)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-one__text {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-one__button-name {
+      font-size: calc(12px + (22 - 12)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   /* sec two */
+
+   .section-two__name {
+      font-size: calc(15px + (30 - 15)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-two__about {
+      font-size: calc(12px + (20 - 12)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(20px + (20 - 20)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   /* sec three */
+
+   .section-three__title,
+   .section-three__year {
+      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-three__text,
+   .section-three__discription,
+   .josefine {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   /* sec four */
+
+   .section-dishes__title {
+      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-dishes__text {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-dishes__button-name {
+      font-size: calc(12px + (22 - 12)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-list__dishes-title {
+      font-size: calc(27px + (36 - 27)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .list-item-title {
+      font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .list-item-about {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+   }
+}
+
+/*------------------ MEDIA 1040px ------------------*/
+
+@media screen and (max-width: 1040px) {
+
+   /* header */
+
+   .head__main-logo {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+   }
+
+   .section-one__main-title {
+      margin: 7% 0 1.8% 0;
+   }
+
+   /* sec three */
+
+   .section-three {
+      padding: 3vh 10%;
+   }
+
+   .section-three__year-dscrptn {
+      gap: 5px;
+   }
+}
+
+/*------------------ MEDIA 1024px ------------------*/
+
+@media screen and (max-width: 1024px) {
+
+   /* sec three */
+
+   .section-three {
+      justify-items: center;
+      text-align: center;
+   }
+}
+
+/*------------------ MEDIA 853px ------------------*/
+
+@media screen and (max-width: 830px) {
+
+   /* sec two */
+
+   .section-two {
+      display: flex;
+      justify-content: center;
+      padding: 20px 20px 0 20px;
+   }
+}
+
+/*------------------ MEDIA 830px ------------------*/
+
+@media screen and (max-width: 830px) {
+
+   /* header */
+
+   .head__button-call {
+      order: 2;
+      padding: 0.5em 2em 0.5em 2em;
+   }
+
+   .head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 130px;
+   }
+
+   .head__main-logo {
+      margin: 10px 130px 0 130px;
+   }
+
+   .head__reservation {
+      padding: 0.5em 3.1em 0.5em 3.1em;
+   }
+
+   /*sec one */
+
+   .section-one {
+      flex-wrap: wrap;
+      padding: 0 40px;
+      display: flex;
+      justify-content: center;
+   }
+
+   .section-one__main-title {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+   }
+
+   .section-one__text {
+      text-align: center;
+   }
+
+}
+
+/*------------------ MEDIA 770px ------------------*/
+
+@media screen and (max-width: 770px) {
+
+   /* header */
+
+   .head {
+      padding: 10px 19vw;
+   }
+
+   .head__main-logo {
+      margin: 0px 20px;
+   }
+
+   /* navigation */
+
+   .navigation {
+      display: none;
+   }
+}
+
+/*------------------ MEDIA 642px ------------------*/
+
+@media screen and (max-width: 642px) {
+
+   /*sec three*/
+
+   .section-three__year-dscrptn {
+      gap: 10px;
+   }
+
+   .section-three {
+      grid-template-columns: 100%;
+   }
+}
+
+/*------------------ MEDIA 620px ------------------*/
+
+@media screen and (max-width: 620px) {
+
+   /* header */
+
+   .head__main-logo {
+      margin: 0px 9vw;
+   }
+}
+
+/*------------------ MEDIA 540px ------------------*/
+
+@media screen and (max-width: 540px) {
+
+   /* header */
+
+   .head {
+      padding: 10px 10px;
+      gap: 10px;
+   }
+
+   .head__main-logo {
+      width: 150px;
+      height: auto;
+      margin: 0px 120px;
+   }
+
+   /* sec one */
+
+   .section-one__main-title {
+      display: block;
+   }
+
+   .section-one__text {
+      text-align: start;
+   }
+
+   .section-one__button-name {
+      padding: 0.4em 1.5em 0.4em 1.5em;
+   }
+
+   /* sec two */
+
+   .section-two {
+      padding: 20px 20px 0 20px;
+   }
+
+   .section-two__circle {
+      width: 45px;
+      height: 45px;
+      margin-top: 10px;
+   }
+
+   .fa-solid.fa-location-dot,
+   .fa-regular.fa-clock,
+   .fa-regular.fa-clipboard {
+      font-size: 20px;
+   }
+
+   .section-two__about-sec {
+      grid-template-columns: 100%;
+   }
+}
+
+/*------------------ MEDIA 420px ------------------*/
+
+/* @media screen and (max-width: 420px) {
+      .head__main-logo {
+         margin: 10px 50px;
+      }
+   }
