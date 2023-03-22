@@ -86,6 +86,10 @@
       font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
       line-height: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
    }
+
+   .list-item-cost {
+      font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+   }
 }
 
 /*------------------ MEDIA 1040px ------------------*/
@@ -112,6 +116,28 @@
 
    .section-three__year-dscrptn {
       gap: 5px;
+   }
+
+   /*sec four */
+
+   .section-four {
+      flex-wrap: wrap;
+   }
+
+   .section-four__section-dishes,
+   .section-four__section-list-dishes {
+      width: 100%;
+   }
+
+   .section-four__section-dishes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   .section-dishes__text {
+      padding: 0 20px;
    }
 }
 
@@ -206,6 +232,13 @@
    .navigation {
       display: none;
    }
+
+   /* sec four */
+
+   .list-item-img {
+      width: 70px;
+      height: 70px;
+   }
 }
 
 /*------------------ MEDIA 642px ------------------*/
@@ -286,12 +319,29 @@
    .section-two__about-sec {
       grid-template-columns: 100%;
    }
+
+   /*sec four*/
+
+   .list-item-decor {
+      display: none;
+   }
+
+   .list-item-title {
+      margin-bottom: 3px;
+   }
+
+
+
+
 }
 
 /*------------------ MEDIA 420px ------------------*/
 
-/* @media screen and (max-width: 420px) {
-      .head__main-logo {
-         margin: 10px 50px;
-      }
+@media screen and (max-width: 420px) {
+
+   .list-item-img {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
    }
+}
