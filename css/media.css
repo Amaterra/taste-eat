@@ -79,7 +79,7 @@
    }
 
    .list-item-title {
-      font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+      font-size: calc(14px + (30 - 14)*((100vw - 320px) / (1440 - 320)));
    }
 
    .list-item-about {
@@ -88,7 +88,7 @@
    }
 
    .list-item-cost {
-      font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+      font-size: calc(14px + (30 - 14)*((100vw - 320px) / (1440 - 320)));
    }
 }
 
@@ -330,7 +330,13 @@
       margin-bottom: 3px;
    }
 
+   .list-item-about {
+      display: none;
+   }
 
+   .list-item-cost {
+      bottom: 0;
+   }
 
 
 }
