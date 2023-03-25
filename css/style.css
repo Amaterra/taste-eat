@@ -327,11 +327,11 @@
 }
 
 .section-four__section-dishes {
-   width: 31%;
+   width: 35%;
 }
 
 .section-four__section-list-dishes {
-   width: 69%;
+   width: 65%;
 }
 
 .section-four__main-title {
@@ -428,7 +428,7 @@
    display: block;
    position: relative;
    background-color: #292E36;
-   width: 90%;
+   width: 60%;
    height: 1px;
    bottom: -25px;
 }
@@ -476,20 +476,62 @@
 /* sec five slider */
 
 .section-five {
-   padding: 140px 40px;
+   padding: 9.7vw 8%;
    background-color: #292E36;
 }
 
 .section-five__slider {
+   height: auto;
+   width: 100%;
+
+   margin: auto;
+
+   overflow: hidden;
+
+}
+
+.slider__slider-line {
    display: flex;
    gap: 30px;
+   width: 1632px;
+
+   position: relative;
+   left: 0;
+   transition: all ease 1s;
+
+   height: auto;
+   width: 270vw;
+
+}
+
+.section-five__sider-button-right,
+.section-five__sider-button-left {
+   width: 15px;
+   height: 15px;
+   border-radius: 50px;
+   position: relative;
+   /* display: flex; */
+   /* flex-direction: row; */
+   /* margin: auto 50%; */
+   margin-top: 5%;
+   right: -50%;
+   background-color: #797E89;
+   border: #5C6168 solid 1px;
+}
+
+.section-five__sider-button-right:hover,
+.section-five__sider-button-left:hover {
+   background-color: #292E36;
 }
 
 .section-five__slider_one {
    background-color: #343942;
-   width: 100%;
+   width: 38%;
+
    max-width: 544px;
-   padding: 30px 40px;
+   padding: 3vw 3vw;
+
+   height: 100%;
 }
 
 .section-five__title__main-title {
@@ -543,6 +585,8 @@
    color: #FFFFFF;
 
    margin-bottom: 5.5vw;
+   position: relative;
+   display: block;
 }
 
 
@@ -550,7 +594,7 @@
 .slider__photo {
    width: 113px;
    height: 113px;
-   margin: 0 30px 30px 0;
+   margin: 0 2vw 2vw 0;
 }
 
 .slider__name-city {
@@ -590,7 +634,7 @@
    width: 100%;
    height: 1px;
    background-color: #797E89;
-   margin-bottom: 30px;
+   margin-bottom: 2vw;
 }
 
 .slider__review {
