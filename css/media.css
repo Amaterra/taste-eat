@@ -156,10 +156,61 @@
       font-size: calc(10px + (15 - 10)*((100vw - 320px) / (1105 - 320)));
    }
 
+   /* sec eight */
 
+   .section-eight__title {
+      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1105 - 320)));
+   }
+
+   .section-eight__about,
+   .section-eight__about-dishes {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1105 - 320)));
+      line-height: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-eigth__name-dishes,
+   .section-eigth__cost-dishes {
+      font-size: calc(23px + (30 - 23)*((100vw - 320px) / (1105 - 320)));
+   }
+
+   .section-eight__button-name {
+      font-size: calc(14px + (22 - 14)*((100vw - 320px) / (1105 - 320)));
+   }
+
+   /* sec nine */
+
+   .section-nine__title {
+      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1105 - 320)));
+   }
+
+   .section-nine__about {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1105 - 320)));
+      line-height: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
+   }
 }
 
+/*------------------ MEDIA 1250px ------------------*/
 
+@media screen and (max-width: 1250px) {
+   .section-nine {
+      flex-wrap: wrap;
+      justify-content: center;
+
+   }
+
+   .section-nine__text-content {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   .section-nine__icon-elements {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}
 
 /*------------------ MEDIA 1040px ------------------*/
 

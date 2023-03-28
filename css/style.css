@@ -522,11 +522,8 @@
 .section-five__slider_one {
    background-color: #343942;
    width: 35vw;
-
    max-width: 544px;
    padding: 3vw;
-
-   /* height: 100%; */
 }
 
 .section-five__title__main-title {
@@ -536,7 +533,6 @@
    font-size: 15px;
    text-transform: uppercase;
    color: #FFFFFF;
-
    margin-bottom: 12px;
 }
 
@@ -567,7 +563,6 @@
    line-height: 56px;
    text-transform: capitalize;
    color: #FFFFFF;
-
    margin-bottom: 8px;
 }
 
@@ -578,13 +573,10 @@
    font-size: 20px;
    line-height: 30px;
    color: #FFFFFF;
-
    margin-bottom: 5.5vw;
    position: relative;
    display: block;
 }
-
-
 
 .slider__photo {
    width: 113px;
@@ -614,12 +606,10 @@
    line-height: 30px;
    letter-spacing: 0.2px;
    color: #E1B168;
-
 }
 
 .slider__img-name {
    display: flex;
-
 }
 
 .slider__review::before {
@@ -640,7 +630,6 @@
    line-height: 38px;
    letter-spacing: 0.25px;
    color: #FFFFFF;
-
 }
 
 /* sec six: img */
@@ -650,7 +639,7 @@
    width: 100%;
 }
 
-/* sec seven: our offer dishes */
+/* SECTION SEVEN - Our Offer dishes */
 
 .section-seven {
    padding: 10vw 2.7vw;
@@ -863,15 +852,18 @@
    color: #FFFFFF;
 }
 
-/*sec eight: popular dishes */
+/*SECTION EIGHT - Popular Dishes */
 
 .section-eight {
    position: relative;
    margin: 0 2.7vw;
+   text-align: center;
 }
 
 .section-eight__text-content {
-   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .section-eight__main-title {
@@ -884,6 +876,21 @@
    letter-spacing: 3px;
    text-transform: uppercase;
    color: #292E36;
+   margin-bottom: 0.8vw;
+}
+
+.section-eight__main-title::after,
+.section-eight__main-title::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 57px;
+   height: 1px;
+   background-color: #E1B168;
+}
+
+.section-eight__main-title::before {
+   bottom: 3px;
 }
 
 .section-eight__title {
@@ -892,15 +899,10 @@
    font-weight: 400;
    font-size: 40px;
    line-height: 56px;
-
-   /* identical to box height, or 140% */
-   text-align: center;
    letter-spacing: 0.2px;
    text-transform: capitalize;
-
    color: #292E36;
-
-
+   margin-bottom: 0.5vw;
 }
 
 .section-eight__about {
@@ -909,31 +911,43 @@
    font-weight: 400;
    font-size: 20px;
    line-height: 30px;
-
-   /* identical to box height, or 150% */
    text-align: center;
    letter-spacing: 0.2px;
-
    color: #555555;
-
-
 }
 
 .section-eight__img-content {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-   justify-items: center;
+   display: flex;
+   justify-content: center;
    gap: 30px;
+   flex-wrap: wrap;
+   margin: 3.5vw 0 4.5vw 0;
+}
+
+.section-eight__card-dishes {
+   max-width: 307px;
+   text-align: start;
 }
 
 .section-eight__img {
-   width: 307px;
-   height: 318px;
+   width: 100%;
+   height: auto;
 }
 
 .section-eight__name-dishes-cost {
    display: flex;
    justify-content: space-between;
+   margin: 0.6vw 0 0.7vw 0;
+}
+
+.section-eight__about-dishes::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 100%;
+   height: 1px;
+   background-color: #DCDCDC;
+   margin-bottom: 0.9vw;
 }
 
 .section-eigth__name-dishes,
@@ -947,7 +961,6 @@
    color: #292E36;
 }
 
-
 .section-eight__about-dishes {
    font-family: 'Josefin Sans';
    font-style: normal;
@@ -958,7 +971,23 @@
    color: #555555;
 }
 
-/* sec nine: our great services */
+.section-eight__button {
+   border: #E1B168 solid 1px;
+   background-color: #FFFFFF;
+}
+
+.section-eight__button-name {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   text-align: center;
+   color: #E1B168;
+   padding: 1.2em 3.5em;
+}
+
+
+/* SECTION NINE - Our Great Services */
 
 .section-nine {
    width: 100%;
@@ -968,6 +997,7 @@
    display: flex;
    justify-content: space-between;
    padding: 10vw 2.7vw;
+   gap: 20px;
 }
 
 .section-nine__text-content {
@@ -985,6 +1015,20 @@
    color: #FFFFFF;
 }
 
+.section-nine__main-title::after,
+.section-nine__main-title::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 168px;
+   height: 1px;
+   background-color: #E1B168;
+}
+
+.section-nine__main-title::before {
+   top: -3px;
+}
+
 .section-nine__title {
    font-family: 'Cormorant Infant';
    font-style: normal;
@@ -994,10 +1038,10 @@
    letter-spacing: 0.2px;
    text-transform: capitalize;
    color: #FFFFFF;
+   margin: 0.7vw 0 0.9vw 0;
 }
 
 .section-nine__about {
-
    font-family: 'Josefin Sans';
    font-style: normal;
    font-weight: 400;
@@ -1005,6 +1049,7 @@
    line-height: 30px;
    letter-spacing: 0.2px;
    color: #FFFFFF;
+   margin-bottom: 1vw;
 }
 
 .section-nine__icon-elements {
@@ -1018,7 +1063,6 @@
    width: 254px;
    height: 235px;
 }
-
 
 .fa-solid.fa-clock,
 .fa-solid.fa-book-open,
@@ -1040,14 +1084,16 @@
    color: #FFFFFF;
 }
 
-/* sec ten: be first who read news */
+/* SECTION TEN - Be First Who Read News */
 
 .section-ten {
    padding: 10vw 2.7vw;
 }
 
 .section-ten__text-content {
-   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .section-ten__main-title {
@@ -1056,13 +1102,23 @@
    font-weight: 400;
    font-size: 15px;
    line-height: 22px;
-
-   /* identical to box height, or 150% */
-   text-align: center;
    letter-spacing: 3px;
    text-transform: uppercase;
-
    color: #292E36;
+}
+
+.section-ten__main-title::after,
+.section-ten__main-title::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 53px;
+   height: 1px;
+   background-color: #E1B168;
+}
+
+.section-ten__main-title::before {
+   top: -3px;
 }
 
 .section-ten__title {
@@ -1071,15 +1127,10 @@
    font-weight: 400;
    font-size: 40px;
    line-height: 56px;
-
-   /* identical to box height, or 140% */
-   text-align: center;
    letter-spacing: 0.2px;
    text-transform: capitalize;
-
    color: #292E36;
-
-
+   margin: 0.7vw 0 0.5vw 0;
 }
 
 .section-ten__about {
@@ -1088,26 +1139,44 @@
    font-weight: 400;
    font-size: 20px;
    line-height: 30px;
-
-   /* identical to box height, or 150% */
-   text-align: center;
    letter-spacing: 0.2px;
-
    color: #555555;
-
-
 }
 
 .section-ten__img-content {
    display: flex;
    gap: 50px;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 2.8vw;
+}
 
+.section-ten__cards {
+   max-width: 640px;
+   border: #C4C4C4 solid 1px;
 }
 
 .section-ten__img {
-   width: 640px;
-   height: 384px;
-   filter: brightness(40%)
+   width: 100%;
+   height: auto;
+   filter: brightness(40%);
+   z-index: 1;
+   position: relative;
+}
+
+.section-ten__background {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section-ten__button {
+   position: relative;
+   z-index: 5;
+   position: absolute;
+   border: #E1B168 solid 1px;
+   background-color: #E1B168;
+   cursor: pointer;
 }
 
 .section-ten__button-name {
@@ -1116,12 +1185,14 @@
    font-weight: 400;
    font-size: 22px;
    line-height: 33px;
-
-   /* identical to box height, or 150% */
    text-align: center;
    letter-spacing: 0.44px;
-
    color: #292E36;
+   padding: 1.3vw 4vw;
+}
+
+.section-ten__text {
+   padding: 4vw 3vw 2.6vw 3vw;
 }
 
 .section-ten__text-main-title {
@@ -1130,18 +1201,30 @@
    font-weight: 400;
    font-size: 15px;
    line-height: 22px;
-
-   /* identical to box height, or 150% */
    letter-spacing: 3px;
    text-transform: uppercase;
-
    color: #292E36;
 
 
 }
 
+.section-ten__text-main-title::after,
+.section-ten__text-main-title::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 100%;
+   height: 1px;
+   background-color: #E1B168;
+}
+
+.section-ten__text-main-title::before {
+   top: -3px;
+}
+
 .section-ten__text-titles {
    display: flex;
+   gap: 30px;
 }
 
 .section-ten__text-title {
