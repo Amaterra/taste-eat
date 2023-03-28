@@ -148,44 +148,73 @@
    }
 
    .section-seven__decor-cost {
-      font-size: calc(20px + (40 - 20)*((100vw - 320px) / (1106 - 320)));
+      font-size: calc(20px + (40 - 20)*((100vw - 320px) / (1440 - 320)));
       line-height: calc(37px + (66 - 37)*((100vw - 320px) / (1440 - 320)));
    }
 
    .section-seven__decor-only {
-      font-size: calc(10px + (15 - 10)*((100vw - 320px) / (1105 - 320)));
+      font-size: calc(10px + (15 - 10)*((100vw - 320px) / (1440 - 320)));
    }
 
    /* sec eight */
 
    .section-eight__title {
-      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1105 - 320)));
+      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1440 - 320)));
    }
 
    .section-eight__about,
    .section-eight__about-dishes {
-      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1105 - 320)));
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
       line-height: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
    }
 
    .section-eigth__name-dishes,
    .section-eigth__cost-dishes {
-      font-size: calc(23px + (30 - 23)*((100vw - 320px) / (1105 - 320)));
+      font-size: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
    }
 
    .section-eight__button-name {
-      font-size: calc(14px + (22 - 14)*((100vw - 320px) / (1105 - 320)));
+      font-size: calc(14px + (22 - 14)*((100vw - 320px) / (1440 - 320)));
    }
 
    /* sec nine */
 
    .section-nine__title {
-      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1105 - 320)));
+      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1440 - 320)));
    }
 
    .section-nine__about {
-      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1105 - 320)));
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
       line-height: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   /* sec ten */
+
+   .section-ten__title {
+      font-size: calc(25px + (40 - 25)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-ten__about {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-ten__button-name {
+      font-size: calc(14px + (22 - 14)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-ten__text-title {
+      font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(28px + (39 - 28)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-ten__text-about {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1440 - 320)));
+      line-height: calc(23px + (30 - 23)*((100vw - 320px) / (1440 - 320)));
+   }
+
+   .section-ten__text-main-title {
+      font-size: calc(10px + (15 - 10)*((100vw - 320px) / (1440 - 320)));
    }
 }
 

@@ -1141,6 +1141,7 @@
    line-height: 30px;
    letter-spacing: 0.2px;
    color: #555555;
+   text-align: center;
 }
 
 .section-ten__img-content {
@@ -1204,8 +1205,6 @@
    letter-spacing: 3px;
    text-transform: uppercase;
    color: #292E36;
-
-
 }
 
 .section-ten__text-main-title::after,
@@ -1233,14 +1232,10 @@
    font-weight: 400;
    font-size: 30px;
    line-height: 39px;
-
-   /* or 130% */
    letter-spacing: 0.2px;
    text-transform: capitalize;
-
    color: #292E36;
-
-
+   margin: 1.8vw 0 1.7vw 0;
 }
 
 .section-ten__text-about {
@@ -1249,13 +1244,8 @@
    font-weight: 400;
    font-size: 20px;
    line-height: 30px;
-
-   /* or 150% */
    letter-spacing: 0.2px;
-
    color: #555555;
-
-
 }
 
 /* sec eleven: reservation */
