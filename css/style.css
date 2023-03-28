@@ -112,7 +112,6 @@
 .head__logo_social {
    width: 219px;
    height: 82px;
-
    display: flex;
    align-items: center;
    justify-content: space-evenly;
@@ -123,7 +122,7 @@
    font-size: 20px;
 }
 
-/* sec one */
+/* SECTION ONE - Welcome to Restaurant*/
 
 .section-one {
    display: flex;
@@ -131,7 +130,6 @@
    padding: 10px 10px 0 40px;
    background-color: #292E36;
    gap: 60px;
-
 }
 
 .section-one__title {
@@ -188,24 +186,25 @@
    padding: 0.7em 2em 0.7em 2em;
 }
 
-/* sec two */
+
+
+/* SECTION TWO - Open Hours */
 
 .section-two {
    background-color: #FFF8F5;
-   padding: 7vw 2.7vw 0 2.4vw;
-
+   padding: 7vw 2.7vw 4vw 2.7vw;
+   display: flex;
+   justify-content: center;
 }
 
 .section-two__about-sec {
-   display: grid;
-   grid-template-columns: 30% 50% 20%;
-   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-   gap: 10px;
-   max-height: 243px;
+   display: flex;
+   justify-content: start;
+   gap: 2vw;
 }
 
 .section-two__circle {
-   width: 83px;
+   min-width: 83px;
    height: 83px;
    background-color: #292E36;
    border-radius: 50%;
@@ -213,12 +212,6 @@
    justify-content: center;
    align-items: center;
    margin-right: 20px;
-}
-
-.locate_us,
-.open_hours,
-.reservation {
-   display: flex;
 }
 
 .fa-solid.fa-location-dot,
@@ -236,6 +229,7 @@
    line-height: 39px;
    letter-spacing: 0.2px;
    color: #292E36;
+   margin-bottom: 0.5vw;
 }
 
 .section-two__about {
@@ -248,17 +242,19 @@
    color: #555555;
 }
 
-/* sec three The Delicious Story*/
+.section-two__info {
+   display: flex;
+}
+
+/* SECTION THREE - The Delicious Story*/
 
 .section-three {
    display: grid;
    grid-template-columns: 60% 40%;
    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-   gap: 45px;
-
+   gap: 3.5vw;
    background-color: #FFF8F5;
-   padding: 84px 53px 125px 40px;
-
+   padding: 5.8vw 2.7vw 8.6vw 2.7vw;
 }
 
 .section-three__img {
@@ -278,10 +274,8 @@
 }
 
 .section-three__year-dscrptn {
-   display: grid;
-   grid-template-columns: 50% 50%;
-   gap: 50px;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   display: flex;
+   margin-top: 1.7vw;
 }
 
 .section-three__text,
@@ -304,6 +298,7 @@
    line-height: 56px;
    letter-spacing: 0.2px;
    color: #292E36;
+   margin-bottom: 1vw;
 }
 
 .josefine {
@@ -317,12 +312,12 @@
    max-width: 199px;
 }
 
-/* sec four Menu */
+/* SECTION FOUR - Menu */
 
 .section-four {
    display: flex;
    gap: 55px;
-   padding: 10vw 2.8% 14vw 2.8%;
+   padding: 10vw 2.7vw 14vw 2.7vw;
    background-color: #FFFFFF;
 }
 
@@ -481,26 +476,22 @@
 }
 
 .section-five__slider {
-   height: auto;
-   width: 100%;
-
+   max-width: 100%;
    margin: auto;
-
    overflow: hidden;
-
 }
 
 .slider__slider-line {
    display: flex;
    gap: 30px;
-   width: 1632px;
+   /* width: 1632px; */
 
    position: relative;
    left: 0;
    transition: all ease 1s;
 
-   height: auto;
-   width: 270vw;
+   /* height: auto; */
+   width: 250vw;
 
 }
 
@@ -514,7 +505,11 @@
    /* flex-direction: row; */
    /* margin: auto 50%; */
    margin-top: 5%;
-   right: -50%;
+
+   left: 47%;
+
+   transform: translateX(-47%);
+
    background-color: #797E89;
    border: #5C6168 solid 1px;
 }
@@ -526,12 +521,12 @@
 
 .section-five__slider_one {
    background-color: #343942;
-   width: 38%;
+   width: 35vw;
 
    max-width: 544px;
-   padding: 3vw 3vw;
+   padding: 3vw;
 
-   height: 100%;
+   /* height: 100%; */
 }
 
 .section-five__title__main-title {
@@ -648,9 +643,540 @@
 
 }
 
-/* sec six */
+/* sec six: img */
 
 .section-six__background-img {
    height: auto;
+   width: 100%;
+}
+
+/* sec seven: our offer dishes */
+
+.section-seven {
+   padding: 10vw 2.7vw;
+}
+
+.section-seven__text-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.section-seven__main-title {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   letter-spacing: 3px;
+   line-height: 22px;
+   text-transform: uppercase;
+   color: #292E36;
+   margin-bottom: 12px;
+}
+
+.section-seven__main-title::after,
+.section-seven__main-title::before {
+   content: "";
+   display: block;
+   position: relative;
+   width: 74px;
+   height: 1px;
+   background-color: #E1B168;
+}
+
+.section-seven__main-title::before {
+   bottom: 3px;
+}
+
+.section-seven__title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   text-transform: capitalize;
+   color: #292E36;
+   line-height: 56px;
+   letter-spacing: 0.2px;
+   margin-bottom: 8px;
+}
+
+.section-seven__about {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #555555;
+   text-align: center;
+}
+
+.section-seven__img-content {
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   margin-top: 3vw;
+}
+
+.section-seven__background-img {
+   max-width: 665px;
+   width: 100%;
+   height: auto;
+   z-index: 1;
+}
+
+
+.section-seven__card.chicken-burger {
+   background-image: url(/taste-eat/img/img_sec_seven_burger.png);
+   width: 46vw;
+   height: 28vw;
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding-left: 2.7%;
+}
+
+
+.section-seven__card.chicken-pizza {
+   background-image: url(/taste-eat/img/img_sec_seven_pizza.png);
+   width: 46vw;
+   height: 28vw;
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding-left: 2.7%;
+}
+
+.section-seven__about-card {
+   position: relative;
+   z-index: 2;
+   text-align: start;
+   max-width: 254px;
+   width: 100%;
+   display: grid;
+   gap: 1%;
+}
+
+.section-seven__main-title-card {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   letter-spacing: 4.5px;
+   text-transform: uppercase;
+   color: #292E36;
+   max-width: 210px;
+   width: 100%;
+   text-align: center;
+}
+
+.section-seven__main-title-card::before,
+.section-seven__main-title-card::after {
+   content: "";
+   display: block;
+   position: relative;
+   width: 100%;
+   height: 1px;
+   background-color: #292E36;
+}
+
+.section-seven__main-title-card::before {
+   top: -2px;
+}
+
+.section-seven__decor {
+   z-index: 2;
+   position: relative;
+   width: 30%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.section-seven__decor-card {
+   max-width: 150px;
+   width: 100%;
+   height: auto;
+   position: relative;
+   z-index: 1;
+}
+
+.section-seven__title-card {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 56px;
+   letter-spacing: 0.2px;
+   color: #292E36;
+}
+
+.section-seven__text-card {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #555555;
+}
+
+.section-seven__decor-cost {
+   position: absolute;
+   z-index: 10;
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 66px;
+   letter-spacing: 0.2px;
+   color: #292E36;
+   z-index: 5;
+   top: 20%;
+}
+
+.section-seven__decor-only {
+   position: absolute;
+   z-index: 10;
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 10px;
+   letter-spacing: 0.15px;
+   text-transform: uppercase;
+   color: #292E36;
+   z-index: 5;
+   top: 20%;
+}
+
+.section-seven__decor-cost.pizza,
+.section-seven__decor-only.pizza {
+   color: #FFFFFF;
+}
+
+/*sec eight: popular dishes */
+
+.section-eight {
+   position: relative;
+   margin: 0 2.7vw;
+}
+
+.section-eight__text-content {
+   text-align: center;
+}
+
+.section-eight__main-title {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   text-align: center;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: #292E36;
+}
+
+.section-eight__title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 56px;
+
+   /* identical to box height, or 140% */
+   text-align: center;
+   letter-spacing: 0.2px;
+   text-transform: capitalize;
+
+   color: #292E36;
+
+
+}
+
+.section-eight__about {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+
+   /* identical to box height, or 150% */
+   text-align: center;
+   letter-spacing: 0.2px;
+
+   color: #555555;
+
+
+}
+
+.section-eight__img-content {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+   justify-items: center;
+   gap: 30px;
+}
+
+.section-eight__img {
+   width: 307px;
+   height: 318px;
+}
+
+.section-eight__name-dishes-cost {
+   display: flex;
+   justify-content: space-between;
+}
+
+.section-eigth__name-dishes,
+.section-eigth__cost-dishes {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 42px;
+   letter-spacing: 0.2px;
+   color: #292E36;
+}
+
+
+.section-eight__about-dishes {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #555555;
+}
+
+/* sec nine: our great services */
+
+.section-nine {
+   width: 100%;
+   height: auto;
+   background-color: #292E36;
+   margin-top: 9.7vw;
+   display: flex;
+   justify-content: space-between;
+   padding: 10vw 2.7vw;
+}
+
+.section-nine__text-content {
+   width: 30%;
+}
+
+.section-nine__main-title {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.section-nine__title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 56px;
+   letter-spacing: 0.2px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+
+.section-nine__about {
+
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.section-nine__icon-elements {
+   display: flex;
+   gap: 30px;
+}
+
+.section-nine__elements {
+   border: #343942 solid 20px;
+   text-align: center;
+   width: 254px;
+   height: 235px;
+}
+
+
+.fa-solid.fa-clock,
+.fa-solid.fa-book-open,
+.fa-solid.fa-truck-fast {
+   color: #E1B168;
+   font-size: 50px;
+   margin-bottom: 15px;
+   padding-top: 20%;
+}
+
+.section-nine__text-element {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 25px;
+   line-height: 35px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+/* sec ten: be first who read news */
+
+.section-ten {
+   padding: 10vw 2.7vw;
+}
+
+.section-ten__text-content {
+   text-align: center;
+}
+
+.section-ten__main-title {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+
+   /* identical to box height, or 150% */
+   text-align: center;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+
+   color: #292E36;
+}
+
+.section-ten__title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 56px;
+
+   /* identical to box height, or 140% */
+   text-align: center;
+   letter-spacing: 0.2px;
+   text-transform: capitalize;
+
+   color: #292E36;
+
+
+}
+
+.section-ten__about {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+
+   /* identical to box height, or 150% */
+   text-align: center;
+   letter-spacing: 0.2px;
+
+   color: #555555;
+
+
+}
+
+.section-ten__img-content {
+   display: flex;
+   gap: 50px;
+
+}
+
+.section-ten__img {
+   width: 640px;
+   height: 384px;
+   filter: brightness(40%)
+}
+
+.section-ten__button-name {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 33px;
+
+   /* identical to box height, or 150% */
+   text-align: center;
+   letter-spacing: 0.44px;
+
+   color: #292E36;
+}
+
+.section-ten__text-main-title {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+
+   /* identical to box height, or 150% */
+   letter-spacing: 3px;
+   text-transform: uppercase;
+
+   color: #292E36;
+
+
+}
+
+.section-ten__text-titles {
+   display: flex;
+}
+
+.section-ten__text-title {
+   font-family: 'Cormorant Infant';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 39px;
+
+   /* or 130% */
+   letter-spacing: 0.2px;
+   text-transform: capitalize;
+
+   color: #292E36;
+
+
+}
+
+.section-ten__text-about {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+
+   /* or 150% */
+   letter-spacing: 0.2px;
+
+   color: #555555;
+
+
+}
+
+/* sec eleven: reservation */
+
+.section-eleven__background {
    width: 100%;
 }
