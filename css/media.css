@@ -414,7 +414,6 @@
    }
 }
 
-
 /*------------------ MEDIA 853px ------------------*/
 
 @media screen and (max-width: 830px) {
@@ -512,7 +511,6 @@
       width: 80%;
       height: 45vw;
    }
-
 }
 
 /*------------------ MEDIA 642px ------------------*/
@@ -592,10 +590,6 @@
       display: block;
 
    }
-
-   /* .section-one__text-section {
-      text-align: start;
-   } */
 
    .section-one__button-name {
       padding: 0.4em 1.5em 0.4em 1.5em;
