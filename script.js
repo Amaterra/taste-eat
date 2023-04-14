@@ -19,26 +19,19 @@ if (window.screen.width >= 540) {
    init();
 
 
+   document.querySelector('.section-five__sider-button-next').addEventListener('click', function () {
+      count++;
+      if (count >= sliderCard.length) {
+         count = 0;
+      }
+      rollSlider();
+
+      function rollSlider() {
+         sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+      }
 
 
-   function slideNext1() {
-
-      document.querySelector('.section-five__sider-button-next').addEventListener('click', function () {
-         count++;
-         if (count >= sliderCard.length) {
-            count = 0;
-         }
-         rollSlider();
-
-         function rollSlider() {
-            sliderLine.style.transform = 'translate(-' + count * width + 'px)';
-         }
-      })
-
-
-      console.log('qqqq');
-   }
-
+   })
 
 
    function slidePrev1() {
@@ -58,51 +51,6 @@ if (window.screen.width >= 540) {
       sliderLine.style.transform = 'translate(-' + count * width + 'px)';
    }
 
-
-
-   //verchenie
-
-   // document.addEventListener('touchstart', handleTouchStart, false);
-   // document.addEventListener('touchmove', handleTouchMove, false);
-
-   // let x1 = null;
-   // let y1 = null;
-
-   // function handleTouchStart(event) {
-   //    const firstTouch = event.touches[0];
-   //    x1 = firstTouch.clientX;
-   //    y1 = firstTouch.clientY;
-   // }
-
-   // function handleTouchMove(event) {
-   //    if (!x1 || !y1) {
-   //       return false;
-   //    }
-   //    let x2 = event.touches[0].clientX;
-   //    let y2 = event.touches[0].clientY;
-
-   //    // console.log(x2, y2);
-   //    let xDiff = x2 - x1;
-   //    let yDiff = y2 - y1;
-
-   //    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-   //       //r-l
-   //       if (xDiff > 0) {
-   //          slidePrev1()
-   //       }
-
-   //       else {
-   //          slideNext1()
-   //       };
-   //    }
-
-   //    x1 = null;
-   //    y1 = null;
-   //}
-
-
-
-   slideNext1();
 }
 
 
@@ -148,48 +96,114 @@ if (window.screen.width <= 539) {
 
 
 
+function slideNextSwipe() {
 
-
-
-var touchstartX = 0;
-var touchstartY = 0;
-var touchendX = 0;
-var touchendY = 0;
-
-var gesuredZone = document.getElementById('slider-cards');
-
-gesuredZone.addEventListener('touchstart', function (event) {
-   touchstartX = event.screenX;
-   touchstartY = event.screenY;
-}, false);
-
-gesuredZone.addEventListener('touchend', function (event) {
-   touchendX = event.screenX;
-   touchendY = event.screenY;
-   handleGesure();
-}, false);
-
-function handleGesure() {
-   var swiped = 'swiped: ';
-   if (touchendX < touchstartX) {
-      slideNext1();
+   count++;
+   if (count >= sliderCard.length) {
+      count = 0;
    }
-   if (touchendX > touchstartX) {
-      slidePrev1();
+   rollSlider();
+
+   function rollSlider() {
+      sliderLine.style.transform = 'translate(-' + count * width + 'px)';
    }
-   if (touchendY < touchstartY) {
-      alert(swiped + 'down!');
+
+   console.log('12');
+}
+
+function slidePrevSwipe() {
+   count--;
+   if (count < 0) {
+      count = sliderCard.length - 1;
    }
-   if (touchendY > touchstartY) {
-      alert(swiped + 'left!');
-   }
-   if (touchendY == touchstartY) {
-      alert('tap!');
+   rollSlider();
+
+
+   function rollSlider() {
+      sliderLine.style.transform = 'translate(-' + count * width + 'px)';
    }
 }
 
 
 
+
+
+
+// var touchstartX = 0;
+// var touchstartY = 0;
+// var touchendX = 0;
+// var touchendY = 0;
+
+// var gesuredZone = document.getElementById('slider-cards');
+
+// gesuredZone.addEventListener('touchstart', function (event) {
+//    touchstartX = event.screenX;
+//    touchstartY = event.screenY;
+// }, false);
+
+// gesuredZone.addEventListener('touchend', function (event) {
+//    touchendX = event.screenX;
+//    touchendY = event.screenY;
+//    handleGesure();
+// }, false);
+
+// function handleGesure() {
+//    // var swiped = 'swiped: ';
+//    if (touchendX < touchstartX) {
+//       console.log('prprpr');
+//    }
+//    if (touchendX > touchstartX) {
+//       console.log('plplpl');
+//    }
+//    if (touchendY < touchstartY) {
+//       console.log('p2prpr');
+//    }
+//    if (touchendY > touchstartY) {
+//       console.log('p7prpr');
+//    }
+//    if (touchendY == touchstartY) {
+//       slideNext12();
+//    }
+// }
+
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+let x1 = null;
+let y1 = null;
+
+function handleTouchStart(event) {
+   const firstTouch = event.touches[0];
+   x1 = firstTouch.clientX;
+   y1 = firstTouch.clientY;
+}
+
+function handleTouchMove(event) {
+   if (!x1 || !y1) {
+      return false;
+   }
+   let x2 = event.touches[0].clientX;
+   let y2 = event.touches[0].clientY;
+
+
+   let xDiff = x2 - x1;
+   let yDiff = y2 - y1;
+
+   if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      //r-l
+      if (xDiff > 0) {
+         slidePrevSwipe();
+      }
+
+      else {
+         slideNextSwipe();
+      };
+   }
+
+   x1 = null;
+   y1 = null;
+}
 
 
 
