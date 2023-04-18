@@ -87,11 +87,17 @@
 }
 
 .navigation {
-   width: 836px;
+   width: 100%;
    height: 82px;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
+   gap: 3.5vw;
+   margin-left: 3vw;
+}
+
+.head__burger {
+   display: none;
 }
 
 .nav__link {
@@ -106,6 +112,24 @@
 }
 
 .nav__link:hover {
+   color: #E1B168;
+}
+
+.head__burger.active:before {
+   transform: rotate(45deg);
+   top: 8.75px;
+}
+
+.head__burger.active:after {
+   transform: rotate(-45deg);
+   bottom: 8.75px;
+}
+
+.head__burger.active span {
+   transform: scale(0);
+}
+
+.fa-brands:hover {
    color: #E1B168;
 }
 
@@ -477,26 +501,17 @@
    width: 100%;
    margin: auto;
    overflow: hidden;
-
-
 }
 
 .slider__slider-line {
    display: flex;
    left: 0;
    transition: all ease 1s;
-
-
-
 }
 
 .slider-card {
    display: flex;
-   /* gap: 2vw; */
    border: #292E36 solid 5px;
-   /* margin: 0 5px; */
-
-
 }
 
 .section-five__buttons {
@@ -509,7 +524,6 @@
    background-color: #343942;
    width: 50%;
    padding: 3vw;
-
    border: #292E36 solid 5px;
 }
 
@@ -528,8 +542,6 @@
    background-color: #797E89;
    border: #5C6168 solid 1px;
 }
-
-
 
 .section-five__title__main-title {
    font-family: 'Josefin Sans';
