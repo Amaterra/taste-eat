@@ -514,7 +514,7 @@
 
       transform: translateY(-45%);
 
-      top: 23%;
+      top: 220px;
    }
 
    .nav__link {
@@ -676,6 +676,10 @@
 @media screen and (max-width: 540px) {
 
    /* header */
+
+   .navigation {
+      top: 190px;
+   }
 
    .head__main-logo {
       width: 150px;
@@ -909,11 +913,7 @@
    /* header */
 
    /* .navigation {
-      top: 47%;
-   }
-
-   .burger-menu {
-      top: 15%;
+      top: 250px;
    } */
 
    .section-eleven__button {
