@@ -112,6 +112,30 @@ function slidePrevSwipe() {
    }
 }
 
+function slideNextSwipe540width() {
+   count++;
+   if (count >= sliderCardOne.length) {
+      count = 0;
+   }
+   rollSlider();
+
+   function rollSlider() {
+      sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+   }
+}
+
+function slidePrevSwipe540width() {
+   count--;
+   if (count < 0) {
+      count = sliderCardOne.length - 1;
+   }
+   rollSlider();
+
+   function rollSlider() {
+      sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+   }
+}
+
 document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
 
@@ -135,15 +159,32 @@ function handleTouchMove(event) {
    let xDiff = x2 - x1;
    let yDiff = y2 - y1;
 
-   if (Math.abs(xDiff) > Math.abs(yDiff)) {
+   if (window.screen.width >= 540) {
 
-      if (xDiff > 0) {
-         slidePrevSwipe();
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+
+         if (xDiff > 0) {
+            slidePrevSwipe();
+         }
+
+         else {
+            slideNextSwipe();
+         };
       }
+   }
 
-      else {
-         slideNextSwipe();
-      };
+   if (window.screen.width < 540) {
+
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+
+         if (xDiff > 0) {
+            slidePrevSwipe540width();
+         }
+
+         else {
+            slideNextSwipe540width();
+         };
+      }
    }
 
    x1 = null;
@@ -155,9 +196,16 @@ function handleTouchMove(event) {
 const tabBurgerMenu = document.querySelector(".head__burger");
 const tabNavigation = document.querySelector(".burger-menu");
 const bodyLock = document.querySelector(".body");
+const tabNavLink = document.querySelector(".navigation");
 
 tabBurgerMenu.addEventListener("click", function () {
    tabBurgerMenu.classList.toggle("active");
    tabNavigation.classList.toggle("active");
    bodyLock.classList.toggle("lock");
 });
+
+tabNavLink.addEventListener("click", function () {
+   tabNavigation.classList.remove("active");
+   tabBurgerMenu.classList.remove("active");
+   bodyLock.classList.remove("lock");
+})

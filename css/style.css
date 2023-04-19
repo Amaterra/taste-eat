@@ -989,6 +989,7 @@
 .section-eight__button {
    border: #E1B168 solid 1px;
    background-color: #FFFFFF;
+   cursor: pointer;
 }
 
 .section-eight__button-name {
@@ -1366,7 +1367,7 @@
    border: #FFFFFF solid 1px;
    background-color: #FFFFFF;
    cursor: pointer;
-   margin-top: 2vw;
+   margin-top: 25px;
 }
 
 .section-eleven__button-name {
@@ -1423,12 +1424,13 @@
    letter-spacing: 3px;
    text-transform: uppercase;
    color: #FFFFFF;
-   margin-bottom: 2.2vw;
+   margin-bottom: 10px;
    width: 174px;
 }
 
 .footer__main-title.contact {
    width: 92px;
+   margin-top: 20px;
 }
 
 .footer__main-title::after,
