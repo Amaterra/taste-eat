@@ -37,10 +37,10 @@
             <img class="head__main-logo" src="/taste-eat/img/logo.taste_eat.png">
          </div>
 
-         <section class="section-eleven" id="section-eleven-reservation">
-            <button class="head__button-reservation head__button" type="button">
-               <p class="head__reservation" href="#section-eleven-reservation">Reservation</p>
-            </button>
+         <button class="head__button-reservation head__button" type="button"
+            onClick="document.location.href='/taste-eat/index.html' + '#section-eleven-reservation'">
+            <p class="head__reservation">Reservation</p>
+         </button>
       </div>
       <div class="head__header-menu">
          <div class="head__nav_logo">
@@ -51,12 +51,13 @@
 
             <div class="burger-menu">
                <nav class="navigation">
-                  <a class="nav__link" href="#">Home</a>
-                  <a class="nav__link" href="#">About Us</a>
+                  <a class="nav__link" href='javascript:document.location.href = "/taste-eat/index.html";'>Home</a>
+                  <a class="nav__link" href='javascript:document.location.href = "/taste-eat/content.html";'>About
+                     Us</a>
                   <a class="nav__link" href="#button_view_menu">Our Menu</a>
-                  <a class="nav__link" href="#">Pages</a>
-                  <a class="nav__link" href="#">Blog</a>
-                  <a class="nav__link" href="#">Contact Us</a>
+                  <a class="nav__link" href='javascript:document.location.href = "/taste-eat/content.html";'>Pages</a>
+                  <a class="nav__link" href='javascript:document.location.href = "/taste-eat/content.html";'>Blog</a>
+                  <a class="nav__link" href="#button-contsct-us">Contact Us</a>
                </nav>
             </div>
             <div class="head__logo_social">
@@ -87,7 +88,8 @@
          <p class="section-one__text">The people, food and the prime locations make the perfect place good friends &
             family
             to come together and have great time.</p>
-         <button class="section-one__button">
+         <button class="section-one__button"
+            onClick="document.location.href='/taste-eat/index.html' + '#button_view_menu'">
             <p class="section-one__button-name">View Menu</p>
          </button>
       </div>
@@ -158,8 +160,8 @@
 
    <!--SECTION FOUR - Menu-->
 
-   <section class="section-four" id="button_view_menu">
-      <div class="section-four__section-dishes">
+   <section class="section-four">
+      <div class="section-four__section-dishes" id="button_view_menu">
          <div class="section-four__main-title">Menu</div>
 
          <h1 class="section-dishes__title">Try Our Special dishes</h1>
@@ -170,6 +172,208 @@
             <p class="section-dishes__button-name">See all dishes</p>
          </button>
       </div>
+
+      <!--POPUP & POPUP CONTENT-->
+
+      <div class="popup-background"></div>
+      <div class="popup">
+
+         <h3 class="content-popup">ALL OUR DISHES</h3>
+         <div class="popup-close"></div>
+
+         <div class="dishes-list dishes-list-for-popup">
+
+            <h1 class="section-list__dishes-title for-popup-title">Starters</h1>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_one.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Raw Scallops from Erquy</h1>
+                  <p class="list-item-about">Shuck the scallop to that used for oysters</p>
+               </div>
+               <p class="list-item-cost">$40</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_two.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Spring Roll</h1>
+                  <p class="list-item-about">Add oil to a hot pan spring onion whites</p>
+               </div>
+               <p class="list-item-cost">$20</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_three.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">French Onion Soup</h1>
+                  <p class="list-item-about">Wheat flour, apple cider vinegar, bread</p>
+               </div>
+               <p class="list-item-cost">$25</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_four.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Tomato Bruschetta</h1>
+                  <p class="list-item-about">Bread, olive oil, garlic, black pepper</p>
+               </div>
+               <p class="list-item-cost">$30</p>
+            </div>
+
+            <h1 class="section-list__dishes-title main-dish for-popup-title">Main Dish</h1>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Main Dish_five.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Grilled Salmon with Dill Sauce</h1>
+                  <p class="list-item-about">Brown sugar, salmon fillet, Dijon mustard</p>
+               </div>
+               <p class="list-item-cost">$40</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Main Dish_six.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Roast Beef with Vegetable</h1>
+                  <p class="list-item-about">Green beans, rib eye, olive oil, beef</p>
+               </div>
+               <p class="list-item-cost">$20</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Main Dish_seven.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Marrkesh Vegetetarian Curruy</h1>
+                  <p class="list-item-about">Sweet potato, eggplant, garbanzo bean</p>
+               </div>
+               <p class="list-item-cost">$25</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Main Dish_eight.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Spicy Vegan Potato Curry</h1>
+                  <p class="list-item-about">Coconut milk, beans, potatoes, curry powder</p>
+               </div>
+               <p class="list-item-cost">$35</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_four-one.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Chicken Manjoori</h1>
+                  <p class="list-item-about">Dish relished by all age groups as a starter dish at parties.</p>
+               </div>
+               <p class="list-item-cost">$15</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_hotdogs.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Hotdog</h1>
+                  <p class="list-item-about">Grilled sausage served in the slit of a partially sliced bun.</p>
+               </div>
+               <p class="list-item-cost">$10</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_burger.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Veg Burger</h1>
+                  <p class="list-item-about">Burgers may be made from ingredients like beans.</p>
+               </div>
+               <p class="list-item-cost">$10</p>
+            </div>
+
+            <div class="list-item-dishes list-item-for-popup">
+               <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_caesar-salad-with-shrimps.png">
+               <div class="list-item_title-about">
+                  <h1 class="list-item-title">Caesar Salad with Shrimps</h1>
+                  <p class="list-item-about">Classic caesar salad with chicken, parmesan and cherry tomatoes.</p>
+               </div>
+               <p class="list-item-cost">$15</p>
+            </div>
+         </div>
+
+         <h1 class="section-list__dishes-title dessert for-popup-title">Dessert</h1>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Dessert_nine.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Apple Pie with Cream</h1>
+               <p class="list-item-about">Whipping cream, egg white, cinnamon</p>
+            </div>
+            <p class="list-item-cost">$15</p>
+         </div>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Dessert_ten.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Lemon Meringue Pie</h1>
+               <p class="list-item-about">Frozen pie crust, meringue, lemon</p>
+            </div>
+            <p class="list-item-cost">$30</p>
+         </div>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_strawberry-tartlet.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Strawberry Tartlet</h1>
+               <p class="list-item-about">Shortcrust pastry tartlets with fresh strawberries.</p>
+            </div>
+            <p class="list-item-cost">$8</p>
+         </div>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_meringue-cake-with-strawberries.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Meringue Cake with Strawberries</h1>
+               <p class="list-item-about">Crispy Meringue with Strawberries.</p>
+            </div>
+            <p class="list-item-cost">$12</p>
+         </div>
+
+         <h1 class="section-list__dishes-title dessert for-popup-title">Drinks</h1>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_one-two.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Blue Juice</h1>
+               <p class="list-item-about">Beat the health blues with our Super Immune Blue Juice Recipe.</p>
+            </div>
+            <p class="list-item-cost">$5</p>
+         </div>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_mojito-cocktail.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Mojito Cocktail</h1>
+               <p class="list-item-about">Non-alcoholic cocktail.</p>
+            </div>
+            <p class="list-item-cost">$15</p>
+         </div>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_peach-coctail.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Peach Coctail</h1>
+               <p class="list-item-about">Non-alcoholic cocktail with Peach.</p>
+            </div>
+            <p class="list-item-cost">$13</p>
+         </div>
+
+         <div class="list-item-dishes list-item-for-popup">
+            <img class="list-item-img" src="/taste-eat/img/img_sec_four_Starters_pinacolada-coctail.png">
+            <div class="list-item_title-about">
+               <h1 class="list-item-title">Pina Colada</h1>
+               <p class="list-item-about">Non-alcoholic cocktail.</p>
+            </div>
+            <p class="list-item-cost">$14</p>
+         </div>
+      </div>
+
+      <!--END POPUP & POPUP CONTENT-->
 
       <div class="section-four__section-list-dishes">
 
@@ -327,11 +531,9 @@
                      absolutely
                      outstanding & attention to detail is in league of its own.</p>
                </div>
-
             </div>
 
             <div class="slider-card">
-
                <div class="section-five__slider_one">
                   <div class="slider__img-name">
                      <div class="slider__img">
@@ -390,18 +592,13 @@
                      satisfied. They give best fried chicken and burgers those are yummy.</p>
                </div>
             </div>
-
          </div>
-
       </div>
 
       <div class="section-five__buttons">
-
          <button class="section-five__sider-button-prev"></button>
          <button class="section-five__sider-button-next"></button>
-
       </div>
-
    </section>
 
    <!--SECTION SIX - Image-->
@@ -536,7 +733,8 @@
          <div class="section-ten__cards">
             <div class="section-ten__background">
                <img class="section-ten__img" src="/taste-eat/img/img_sec_ten_background_one.png">
-               <button class="section-ten__button" type="button">
+               <button class="section-ten__button" type="button"
+                  onClick="document.location.href='/taste-eat/content.html'">
                   <p class="section-ten__button-name">View More</p>
                </button>
             </div>
@@ -553,7 +751,8 @@
          <div class="section-ten__cards">
             <div class="section-ten__background">
                <img class="section-ten__img" src="/taste-eat/img/img_sec_ten_background_two.png">
-               <button class="section-ten__button" type="button">
+               <button class="section-ten__button" type="button"
+                  onClick="document.location.href='/taste-eat/content.html'">
                   <p class="section-ten__button-name">View More</p>
                </button>
             </div>
@@ -573,8 +772,8 @@
 
    <!-- SECTION ELEVEN - Reservation -->
 
-   <section class="section-eleven" id="section-eleven-reservation">
-      <div class="section-eleven__reservation">
+   <section class="section-eleven">
+      <div class="section-eleven__reservation" id="section-eleven-reservation">
          <div class="section-eleven__section-title">
             <h3 class="section-eleven__main-title">reservation</h3>
             <h2 class="section-eleven__title">Book Your Table</h2>
@@ -611,7 +810,7 @@
          </div>
       </div>
       <div class="footer__main-info">
-         <div class="footer__contact">
+         <div class="footer__contact" id="button-contsct-us">
             <p class="footer__main-title contact">Contact</p>
             <p class="footer__info">5 Rue Dalou, 75015 Paris</p>
             <p class="footer__info tel">+123 456 789</p>
@@ -645,8 +844,7 @@
          </div>
       </div>
    </footer>
-   <script src="/taste-eat/script.js"></script>
-   <!-- <script src="/taste-eat/scriptSlider.js"></script> -->
+   <script src="/taste-eat/js/script.js"></script>
 </body>
 
 </html>

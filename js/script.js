@@ -1,4 +1,3 @@
-
 const sliderCard = document.querySelectorAll('.slider-card');
 const sliderLine = document.querySelector('.slider__slider-line');
 let count = 0;
@@ -209,3 +208,59 @@ tabNavLink.addEventListener("click", function () {
    tabBurgerMenu.classList.remove("active");
    bodyLock.classList.remove("lock");
 })
+
+//buttons 
+
+const tabLogo = document.querySelector(".head__main-logo");
+tabLogo.addEventListener("click", function () {
+   tabLogo.onclick = document.location.href = "/taste-eat/index.html";
+});
+
+//popup
+
+const tabClosePopup = document.querySelector(".popup-close");
+const tabCloseBg = document.querySelector(".popup-background");
+const tabCloseWindow = document.querySelector(".popup");
+
+tabClosePopup.addEventListener("click", function () {
+
+   tabCloseBg.classList.toggle("active");
+   tabCloseWindow.classList.toggle("active");
+   bodyLock.classList.remove("lock");
+
+});
+
+const tabBtnAllDishes = document.querySelector(".section-dishes__button");
+
+tabBtnAllDishes.addEventListener("click", function () {
+   tabCloseWindow.classList.toggle("active");
+   tabCloseBg.classList.toggle("active");
+   bodyLock.classList.toggle("lock");
+});
+
+const tabBtnAllDishesTwo = document.querySelector(".section-eight__button");
+
+tabBtnAllDishesTwo.addEventListener("click", function () {
+   tabCloseWindow.classList.toggle("active");
+   tabCloseBg.classList.toggle("active");
+   bodyLock.classList.toggle("lock");
+});
+
+
+// const popupCloseOutsideWindow = document.querySelector('.popup');
+// const popupActive = document.querySelector('.popup.active');
+
+// document.addEventListener('click', (e) => {
+//    const clickOutsideWin = e.composedPath().includes(popupCloseOutsideWindow);
+//    if (!clickOutsideWin) {
+
+
+//       console.log('mimo');
+//    }
+// })
+
+document.querySelector('.popup-background').addEventListener('click', () => {
+   tabCloseWindow.classList.toggle("active");
+   tabCloseBg.classList.toggle("active");
+   bodyLock.classList.toggle("lock");
+});
