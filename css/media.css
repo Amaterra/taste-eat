@@ -937,17 +937,32 @@
    .footer__button {
       width: 25vw;
    }
+
+   .message-window-subscribe {
+      width: 250px;
+      height: 100px;
+      font-size: 14px;
+   }
+}
+
+/* -------------------------- MEDIA 370 -----------------------*/
+
+@media screen and (max-width: 370px) {
+
+   /* section eleven */
+
+   .message-for-reservation {
+      width: 200px;
+      height: 100px;
+      font-size: 14px;
+   }
 }
 
 /*------------------ MEDIA 320px ------------------*/
 
 @media screen and (max-width: 320px) {
 
-   /* header */
-
-   /* .navigation {
-      top: 250px;
-   } */
+   /* section eleven */
 
    .section-eleven__button {
       margin-top: 20px;

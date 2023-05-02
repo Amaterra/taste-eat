@@ -154,18 +154,14 @@ function handleTouchMove(event) {
    let x2 = event.touches[0].clientX;
    let y2 = event.touches[0].clientY;
 
-
    let xDiff = x2 - x1;
    let yDiff = y2 - y1;
 
    if (window.screen.width >= 540) {
-
       if (Math.abs(xDiff) > Math.abs(yDiff)) {
-
          if (xDiff > 0) {
             slidePrevSwipe();
          }
-
          else {
             slideNextSwipe();
          };
@@ -173,13 +169,10 @@ function handleTouchMove(event) {
    }
 
    if (window.screen.width < 540) {
-
       if (Math.abs(xDiff) > Math.abs(yDiff)) {
-
          if (xDiff > 0) {
             slidePrevSwipe540width();
          }
-
          else {
             slideNextSwipe540width();
          };
@@ -212,6 +205,7 @@ tabNavLink.addEventListener("click", function () {
 //buttons 
 
 const tabLogo = document.querySelector(".head__main-logo");
+
 tabLogo.addEventListener("click", function () {
    tabLogo.onclick = document.location.href = "/taste-eat/index.html";
 });
@@ -246,21 +240,131 @@ tabBtnAllDishesTwo.addEventListener("click", function () {
    bodyLock.classList.toggle("lock");
 });
 
-
-// const popupCloseOutsideWindow = document.querySelector('.popup');
-// const popupActive = document.querySelector('.popup.active');
-
-// document.addEventListener('click', (e) => {
-//    const clickOutsideWin = e.composedPath().includes(popupCloseOutsideWindow);
-//    if (!clickOutsideWin) {
-
-
-//       console.log('mimo');
-//    }
-// })
-
 document.querySelector('.popup-background').addEventListener('click', () => {
    tabCloseWindow.classList.toggle("active");
    tabCloseBg.classList.toggle("active");
    bodyLock.classList.toggle("lock");
 });
+
+//валидность reservation
+
+let form = document.querySelector('.form-reservation'); //форма
+let inputs = document.querySelectorAll('.section-eleven__reservation_input'); //общий класс
+
+let inputEmail = document.querySelector('.input-email');
+let inputPersons = document.querySelector('.input-persons');
+
+//проверка почты
+
+function validateEmail(email) {
+   let regular = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   return regular.test(String(email).toLowerCase());
+}
+
+//проверка количества человек
+
+function validateNumber(number) {
+   let regular = /^\d{1,}$/;
+   return regular.test(String(number));
+}
+
+form.onsubmit = function () {
+
+   let personVal = inputPersons.value;
+   let emailVal = inputEmail.value;
+
+   if (validateEmail(emailVal) & validateNumber(personVal)) {
+
+      let messageBooking = 'You have successfully booked a table';
+      let messageWindow = document.createElement('div');
+      messageWindow.classList.add('message-for-reservation');
+      messageWindow.innerText = messageBooking;
+
+      document.body.appendChild(messageWindow);
+      setTimeout(
+         () => {
+            messageWindow.remove();
+         },
+         3000
+      );
+   }
+
+
+   let formReservation = document.getElementById('form-reservation-id');
+   let buttonClear = document.getElementById('button-clear');
+   buttonClear.addEventListener('click', () => formReservation.reset());
+
+   return false;
+}
+
+let formSubs = document.querySelector('.footer__form'); //форма
+
+formSubs.onsubmit = function () {
+
+   let inputEmailSubs = document.querySelector('.footer__email');
+
+   let emailSubsVal = inputEmailSubs.value;
+
+   if (validateEmail(emailSubsVal)) {
+
+      let messageSubscribe = 'Thanks for Subscribing to the TeasteEat newseller';
+      let messageSubscribeWindow = document.createElement('div');
+      messageSubscribeWindow.classList.add('message-window-subscribe');
+      messageSubscribeWindow.innerText = messageSubscribe;
+
+      document.body.appendChild(messageSubscribeWindow);
+      setTimeout(
+         () => {
+            messageSubscribeWindow.remove();
+         },
+         3000
+      );
+   }
+
+   document.getElementById('input-sbcrb-email').value = ''
+
+   return false;
+}
+
+//плавный скролл к якорю
+
+const anchors = document.querySelectorAll('a.scroll-smooth')
+
+for (let anchor of anchors) {
+   anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const blockID = anchor.getAttribute('href')
+
+      document.querySelector(blockID).scrollIntoView({
+         behavior: 'smooth',
+         block: 'start'
+      })
+   })
+}
+
+// кнопка scroll-to-top
+
+const goTopBtn = document.querySelector('.go-top');
+
+goTopBtn.addEventListener("click", goTop);
+window.addEventListener("scroll", trackScroll);
+
+function trackScroll() {
+   const offset = window.pageYOffset;
+   const heightWindow = document.documentElement.clientHeight; //определение высоты окна браузера
+
+   if (offset > heightWindow) {
+      goTopBtn.classList.add("show");
+   } else {
+      goTopBtn.classList.remove("show");
+   }
+}
+
+function goTop() {
+
+   if (window.pageYOffset > 0) {
+      window.scrollBy(0, -50);
+      setTimeout(goTop, 0);
+   }
+}

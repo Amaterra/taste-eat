@@ -12,6 +12,25 @@
    font-size: 16px;
 }
 
+.go-top {
+   position: fixed;
+   right: 30px;
+   top: 90%;
+   font-size: 35px;
+   z-index: 1000;
+   color: #858590;
+   cursor: pointer;
+   display: none;
+}
+
+.go-top.show {
+   display: block;
+}
+
+.go-top:hover {
+   color: #E1B168;
+}
+
 /*header*/
 
 .header {
@@ -45,6 +64,10 @@
    padding: 1em 3em 1em 3em;
 }
 
+.head__button-call:hover {
+   background-color: #343942;
+}
+
 .head__number-phone {
    align-items: normal;
    text-decoration: none;
@@ -59,6 +82,12 @@
 .head__button-reservation {
    background-color: #E1B168;
    color: #292E36;
+   border: #E1B168 solid 3.5px;
+}
+
+.head__button-reservation:hover {
+   background-color: #292E36;
+   color: #E1B168;
    border: #E1B168 solid 3.5px;
 }
 
@@ -86,7 +115,6 @@
    justify-content: space-between;
    align-items: center;
 }
-
 
 .navigation {
    width: 100%;
@@ -200,6 +228,12 @@
    border: #E1B168 solid 1px;
    cursor: pointer;
    margin-top: 2.4vw;
+   color: #E1B168;
+}
+
+.section-one__button:hover {
+   background-color: #E1B168;
+   color: #292E36;
 }
 
 .section-one__button-name {
@@ -209,7 +243,6 @@
    font-size: 1.3em;
    line-height: 33px;
    text-align: center;
-   color: #E1B168;
    padding: 0.7em 2em 0.7em 2em;
 }
 
@@ -412,6 +445,12 @@
    border: #E1B168 solid 2px;
    background-color: #FFFFFF;
    cursor: pointer;
+   color: #E1B168;
+}
+
+.section-dishes__button:hover {
+   background-color: #E1B168;
+   color: #FFFFFF;
 }
 
 .section-dishes__button-name {
@@ -420,7 +459,6 @@
    font-weight: 400;
    font-size: 22px;
    text-align: center;
-   color: #E1B168;
    padding: 1.25em 3.5em;
 }
 
@@ -450,7 +488,7 @@
    background-color: #292E36;
    width: 60%;
    height: 1px;
-   bottom: -25px;
+   bottom: -15px;
 }
 
 .list-item-img {
@@ -545,15 +583,19 @@
    font-size: 30px;
    color: #292E36;
    text-align: center;
-   margin-bottom: 10px;
+   margin-bottom: 30px;
 }
 
 .for-popup-title {
    text-align: center;
+   margin: 0;
+   margin: 0;
 }
 
 .list-item-for-popup {
    justify-content: space-evenly;
+   margin: 0;
+   padding-top: 25px;
 }
 
 .popup.active {
@@ -565,7 +607,8 @@
    height: 13px;
    position: absolute;
    display: block;
-   left: 90%;
+   right: 15px;
+
    top: 2.3%;
    z-index: 102;
    cursor: pointer;
@@ -1094,6 +1137,12 @@
    border: #E1B168 solid 1px;
    background-color: #FFFFFF;
    cursor: pointer;
+   color: #E1B168;
+}
+
+.section-eight__button:hover {
+   background-color: #E1B168;
+   color: #FFFFFF;
 }
 
 .section-eight__button-name {
@@ -1102,7 +1151,6 @@
    font-weight: 400;
    font-size: 22px;
    text-align: center;
-   color: #E1B168;
    padding: 1.2em 3.5em;
 }
 
@@ -1297,6 +1345,13 @@
    border: #E1B168 solid 1px;
    background-color: #E1B168;
    cursor: pointer;
+   color: #292E36;
+}
+
+.section-ten__button:hover {
+   background-color: #292E36;
+   color: #E1B168;
+   border: #E1B168 solid 3.5px;
 }
 
 .section-ten__button-name {
@@ -1307,7 +1362,6 @@
    line-height: 33px;
    text-align: center;
    letter-spacing: 0.44px;
-   color: #292E36;
    padding: 1.3vw 4vw;
 }
 
@@ -1472,9 +1526,11 @@
    background-color: #FFFFFF;
    cursor: pointer;
    margin-top: 25px;
-}
-
-.section-eleven__button-name {
+   display: block;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #000000;
    font-family: 'Josefin Sans';
    font-style: normal;
    font-weight: 400;
@@ -1482,8 +1538,68 @@
    line-height: 33px;
    text-align: center;
    letter-spacing: 0.2px;
+   padding: 1.4vw 3.2vw;
+}
+
+.section-eleven__button:hover,
+.section-eleven__button-clear:hover {
+   border: #000000 solid 1px;
+   background-color: #E5E5E5;
    color: #000000;
-   padding: 1.6vw 3.7vw;
+}
+
+.section-eleven__button-clear {
+   border: #FFFFFF solid 1px;
+   background-color: #292E36;
+   cursor: pointer;
+   display: block;
+   position: relative;
+   margin-top: 15%;
+   left: 100%;
+   transform: translateX(-100%);
+   color: #FFFFFF;
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   padding: 0.5vw 0.7vw;
+}
+
+.message-for-reservation {
+   background-color: #343942;
+   width: 300px;
+   height: 150px;
+   z-index: 200;
+   position: fixed;
+   text-align: center;
+   margin: 0;
+   padding: 20px;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 10px;
+   border: 1px solid #E1B168;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-transform: uppercase;
+   font-family: 'Jost';
+   letter-spacing: 3px;
+   color: #E1B168;
+   animation: message 10s forwards;
+}
+
+@keyframes message {
+   100% {
+      opacity: 0;
+   }
+
+   0% {
+      opacity: 1;
+   }
 }
 
 /* footer */
@@ -1594,6 +1710,40 @@
    margin: 2vw 0 6vw 0;
 }
 
+.message-window-subscribe {
+   background-color: #FFFFFF;
+   width: 400px;
+   height: 100px;
+   z-index: 200;
+   position: fixed;
+   text-align: center;
+   margin: 0;
+   padding: 20px;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 10px;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-transform: uppercase;
+   font-family: 'Jost';
+   letter-spacing: 3px;
+   color: #343942;
+   animation: messageAnim 10s forwards;
+}
+
+@keyframes messageAnim {
+   100% {
+      opacity: 0;
+   }
+
+   0% {
+      opacity: 1;
+   }
+}
+
 .footer__email {
    height: 100%;
    width: 26vw;
@@ -1623,6 +1773,12 @@
 
    text-align: center;
    letter-spacing: 0.2px;
+   color: #000000;
+}
+
+.footer__button:hover {
+   border: #000000 solid 1px;
+   background-color: #E5E5E5;
    color: #000000;
 }
 

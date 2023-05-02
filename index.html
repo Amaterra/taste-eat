@@ -37,7 +37,7 @@
             <img class="head__main-logo" src="/taste-eat/img/logo.taste_eat.png">
          </div>
 
-         <button class="head__button-reservation head__button" type="button"
+         <button class="head__button-reservation head__button " type="button"
             onClick="document.location.href='/taste-eat/index.html' + '#section-eleven-reservation'">
             <p class="head__reservation">Reservation</p>
          </button>
@@ -54,10 +54,10 @@
                   <a class="nav__link" href='javascript:document.location.href = "/taste-eat/index.html";'>Home</a>
                   <a class="nav__link" href='javascript:document.location.href = "/taste-eat/content.html";'>About
                      Us</a>
-                  <a class="nav__link" href="#button_view_menu">Our Menu</a>
+                  <a class="nav__link scroll-smooth" href="#button_view_menu">Our Menu</a>
                   <a class="nav__link" href='javascript:document.location.href = "/taste-eat/content.html";'>Pages</a>
                   <a class="nav__link" href='javascript:document.location.href = "/taste-eat/content.html";'>Blog</a>
-                  <a class="nav__link" href="#button-contsct-us">Contact Us</a>
+                  <a class="nav__link scroll-smooth" href="#button-contact-us">Contact Us</a>
                </nav>
             </div>
             <div class="head__logo_social">
@@ -71,9 +71,6 @@
                   <i class="fa-brands fa-pinterest"></i></a>
             </div>
          </div>
-
-
-
       </div>
    </header>
 
@@ -778,20 +775,30 @@
             <h3 class="section-eleven__main-title">reservation</h3>
             <h2 class="section-eleven__title">Book Your Table</h2>
          </div>
-         <div class="section-eleven__input-name-email">
-            <input class="section-eleven__reservation_input" type="text" name="reservation-form" placeholder="Name">
-            <input class="section-eleven__reservation_input" type="email" name="reservation-form" placeholder="Email">
-         </div>
-         <div class="section-eleven__input-persons-time-date">
-            <input class="section-eleven__reservation_input two" type="text" name="reservation-form"
-               placeholder="Persons">
-            <input class="section-eleven__reservation_input two" type="text" name="reservation-form"
-               placeholder="Timing">
-            <input class="section-eleven__reservation_input two" type="text" name="reservation-form" placeholder="Date">
-         </div>
-         <button class="section-eleven__button" type="button">
-            <p class="section-eleven__button-name">Book A Table</p>
-         </button>
+
+         <form class="form-reservation" id="form-reservation-id" action="">
+            <div class="section-eleven__input-name-email">
+               <input class="section-eleven__reservation_input input-name" type="text" name="reservation-form"
+                  placeholder="Name" required pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+               <input class="section-eleven__reservation_input input-email" type="email" name="reservation-form"
+                  placeholder="Email" required>
+            </div>
+            <div class="section-eleven__input-persons-time-date">
+               <input class="section-eleven__reservation_input two input-persons" type="number" name="reservation-form"
+                  placeholder="Persons" required>
+               <input class="section-eleven__reservation_input two input-timing" type="time" name="reservation-form"
+                  placeholder="Timing" required>
+               <input class="section-eleven__reservation_input two input-date" type="date" name="reservation-form"
+                  placeholder="Date" required>
+            </div>
+            <button class="section-eleven__button" type="submit" id="button-reservation">
+               <p class="section-eleven__button-name">Book A Table</p>
+            </button>
+
+            <button class="section-eleven__button-clear" type="button" id="button-clear">Clear Form</button>
+         </form>
+
+
       </div>
    </section>
 
@@ -810,7 +817,7 @@
          </div>
       </div>
       <div class="footer__main-info">
-         <div class="footer__contact" id="button-contsct-us">
+         <div class="footer__contact" id="button-contact-us">
             <p class="footer__main-title contact">Contact</p>
             <p class="footer__info">5 Rue Dalou, 75015 Paris</p>
             <p class="footer__info tel">+123 456 789</p>
@@ -820,12 +827,13 @@
             <img class="footer__logo" src="/taste-eat/img/logo.taste_eat.png">
             <p class="footer__about">Join our mailing list for updates,</p>
             <p class="footer__about">Get news & offers events.</p>
-            <form class="footer__form" action="#">
-               <input class="footer__email" type="email" name="email" placeholder="Email">
-               <button class="footer__button" type="submit">
-                  <p class="footer__button-name">Subscribe</p>
-               </button>
+
+            <form class="footer__form" action="" id="form-subscribe">
+               <input class="footer__email" id="input-sbcrb-email" type="email" name="email" placeholder="Email"
+                  required>
+               <button class="footer__button" type="submit">Subscribe</button>
             </form>
+
          </div>
          <div class="footer__working-hours">
             <p class="footer__main-title">Working Hours</p>
@@ -844,6 +852,11 @@
          </div>
       </div>
    </footer>
+
+   <div class="go-top">
+      <i class="fa-solid fa-circle-arrow-up"></i>
+   </div>
+
    <script src="/taste-eat/js/script.js"></script>
 </body>
 
