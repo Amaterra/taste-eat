@@ -235,6 +235,10 @@
       font-size: calc(12px + (22 - 12)*((100vw - 320px) / (1440 - 320)));
    }
 
+   .section-eleven__button-clear {
+      font-size: calc(8px + (15 - 8)*((100vw - 320px) / (1440 - 320)));
+   }
+
    /* footer */
 
    .footer__hashtag {
